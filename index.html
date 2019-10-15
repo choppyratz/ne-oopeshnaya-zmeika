@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</head>
+    <style>
+        .field{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            display: grid;
+            border:1px dashed;
+        }
+
+        .w{
+            
+        }
+        .act{
+            background: green;
+        }
+
+        .apple{
+            background: red;
+        }
+
+        .rep{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            z-index: 999;
+            border: 1px solid;
+            width: 220px;
+            height: 90px;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 10px;
+            border-radius: 10px;
+            font-family: Arial;
+            background: #26a69a;
+            color:white;
+        }
+
+        button{
+            border: none;
+            background: #00b0ff;
+            color: white;
+            font-family: Arial;
+            padding:10px 15px; 
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+            font-size: 16px;
+        }
+    </style>
+<body>
+    <div class="rep">
+        <p>Ваш счёт:0</p>
+        <button>Заново</button>
+    </div>
+    <span>Count:0</span>
+    <div class="field">
+
+    </div>
+        
+    <script src="script.js"></script>
+</body>
+</html>
